@@ -91,7 +91,7 @@ function SendOrder(buy_sell, price) 						--функция выставлени�
           ["QUANTITY"] = tostring(lots),
           ["TRANS_ID"] = tostring(uniq_trans_id)
                 }
- -- local res = sendTransaction(trans)
+  local res = sendTransaction(trans)
   write_log("Заявка "..buy_sell.." по цене "..price)
 end
 
